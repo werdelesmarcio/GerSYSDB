@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="038b3b83-7eef-4b1c-afe9-dcc09b0b00f3" ChangeDateTime="03/04/2022 03:29:49">
+    <Property Name="ElementName" Value="[dbo].[tb_users].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_user" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="60cdfe82-c35a-4697-a398-e7433ad0b06e" ChangeDateTime="03/04/2022 03:33:25">
+    <Property Name="ElementName" Value="[dbo].[tb_users].[pass_user]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="active_user" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="68474d4e-9296-4338-b192-ac1eeeee8b3b" ChangeDateTime="03/04/2022 03:35:20">
+    <Property Name="ElementName" Value="[dbo].[tb_datausers].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_datausers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id_datausers" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7bb5ba38-ae1b-423f-8423-1d67525ba9c9" ChangeDateTime="03/04/2022 03:39:48">
+    <Property Name="ElementName" Value="[dbo].[FK_tb_datausers_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_datausers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_tb_datausers_tb_users]" />
+  </Operation>
+</Operations>
